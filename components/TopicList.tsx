@@ -32,7 +32,7 @@ export default async function TopicList() {
             <div>{item.description}</div>
           </div>
           <div className="flex gap-2">
-            <RemoveBtn id={item._id}/>
+            <RemoveBtn id={item._id} />
             <Link href={`/editTopic/${item._id}`}>
               <HiPencilAlt size={24} />
             </Link>

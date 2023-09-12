@@ -14,9 +14,8 @@ const AddTopic = () => {
       alert("Title and description are required.");
       return;
     }
-    const apiUrl = process.env.API_URL;
     try {
-      const res = await fetch(`${apiUrl}/api/topics`, {
+      const res = await fetch(`/api/topics`, {
         method: "POST",
         headers: {
           "Content-type": "application/json",
